@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary: #ea2eb8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* COMMON */
+.container {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inner {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 2.8rem;
+}
+
+.url-form {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.url-form .form-element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.url-form label {
+  min-width: 120px;
+}
+
+.url-form select,
+.url-form input {
+  flex-grow: 1;
+  padding: 10px 12px;
+  border: 2px solid;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.url-form select:focus,
+.url-form input:focus,
+.url-form select:hover,
+.url-form input:hover {
+  border: 2px solid #3d87f6;
+}
+
+.url-form .form-button {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.url-form .btn {
+  width: 150px;
+  font-size: 1.8rem;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.url-form .btn:hover {
+  cursor: pointer;
+}
+
+.url-form .btn-navigate {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  transition: all 0.3s ease;
+}
+
+.url-form .btn-navigate:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px #020024;
+}
+
+.url-form .btn-replace {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  transition: all 0.3s ease;
+}
+
+.url-form .btn-replace:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px #833ab4;
+}
+
+.url-form .btn-reload {
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  transition: all 0.3s ease;
+}
+
+.url-form .btn-reload:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px #2a7b9b;
+}

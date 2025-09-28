@@ -1,5 +1,4 @@
 const bodyTable = document.querySelector("#table tbody");
-console.log(bodyTable);
 
 const { href, protocol, hostname, port, pathname, search, hash, origin } =
   window.location;
@@ -50,7 +49,6 @@ const propertiesArr = [
 
 const html = propertiesArr
   .map((property) => {
-    console.log(property);
     return `<tr>
              <td class="bold">location.${property.name}</td>
              <td>${property.value}</td>
