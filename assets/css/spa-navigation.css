@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* COMMON */
+.container {
+  max-width: 1320px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Nav-bar */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  color: #fff;
+  width: 100%;
+  padding: 12px 0;
+  background: #14485b;
+}
+
+.nav-bar .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar .logo {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.nav-bar .nav-menu {
+  display: flex;
+}
+
+.nav-bar .nav-item .nav-link {
+  color: #fff;
+  padding: 18px;
+  font-size: 1.9rem;
+  text-decoration: none;
+}
+
+.nav-bar .nav-item .nav-link:hover {
+  background: rgba(225, 225, 225, 0.1);
+}
+
+.nav-bar .nav-link.active {
+  background: rgba(225, 225, 225, 0.1);
+}
+
+/* Body Content */
+.body-content {
+  margin-top: 90px;
+}
+
+.body-content .page {
+  display: none;
+  animation: slideUp 0.5s;
+}
+
+.body-content .page.active {
+  display: block;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.body-content .body-element {
+  text-align: center;
+}
+
+.body-content .body-element h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+/* History Length */
+.history-info {
+  position: fixed;
+  right: 40px;
+  bottom: 30px;
+  color: #fff;
+  background: #14485b;
+  padding: 16px;
+  border-radius: 24px;
+}
