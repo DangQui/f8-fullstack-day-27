@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  background: linear-gradient(135deg, #f0f2f5 0%, #e6e9ec 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Inner */
+.inner {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+.inner h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #1a3c34;
+  margin-bottom: 20px;
+}
+
+/* Video Section */
+.video-section {
+  margin-top: 30px;
+}
+
+#video {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  border: 2px solid #d1d5db;
+  background: #000;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  background: #1a3c34;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #2e6b5e;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn:disabled {
+  background: #a0a0a0;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Photo Section */
+.photo-section {
+  margin-top: 20px;
+}
+
+#photo {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 2px solid #d1d5db;
+  display: none;
+}
+
+/* Status Message */
+.status-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px 25px;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.status-message.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.status-message.hide {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.status-message.success {
+  background: #28a745;
+}
+
+.status-message.error {
+  background: #dc3545;
+}

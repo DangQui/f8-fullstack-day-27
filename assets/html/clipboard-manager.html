@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clipboard Manager</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/clipboard-manager.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="inner">
+          <h2>Clipboard - Manager</h2>
+          <div class="clipboard-section">
+            <div class="textarea">
+              <textarea
+                name="textInput"
+                id="textInput"
+                placeholder="Nhập nội dung cần copy..."></textarea>
+              <button class="btn btn-copy" id="btnCopy">Copy</button>
+            </div>
+          </div>
+          <div class="clipboard-section">
+            <div class="textarea">
+              <button class="btn btn-paste" id="btnPaste">Paste</button>
+              <textarea
+                name="textOutput"
+                id="textOutput"
+                placeholder="Nội dung Clipboard sẽ hiển thị tại đây..."></textarea>
+            </div>
+          </div>
+          <div id="statusMessage" class="status-message">a</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/clipboard-manager.js"></script>
+  </body>
+</html>

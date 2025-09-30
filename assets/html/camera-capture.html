@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camera Capture</title>
+    <link rel="stylesheet" href="../css/camera-capture.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner">
+        <h2>Camera Capture</h2>
+        <div class="video-section">
+          <video id="video" autoplay playsinline></video>
+          <div class="controls">
+            <button class="btn" id="startCamera">Start Camera</button>
+            <button class="btn" id="stopCamera" disabled>Stop Camera</button>
+            <button class="btn" id="takePhoto" disabled>Take Photo</button>
+            <button class="btn" id="downloadPhoto" disabled>
+              Download Photo
+            </button>
+          </div>
+        </div>
+        <div class="photo-section">
+          <img id="photo" alt="Captured Photo" />
+          <canvas id="canvas" style="display: none"></canvas>
+        </div>
+        <div id="statusMessage" class="status-message"></div>
+      </div>
+    </div>
+    <script src="../js/camera-capture.js"></script>
+  </body>
+</html>
