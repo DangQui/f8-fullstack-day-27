@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Tools</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        font-size: 62.5%; /* 1rem = 10px */
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.6rem;
+        background: linear-gradient(135deg, #f0f2f5 0%, #e6e9ec 100%);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* Navbar */
+      .navbar {
+        width: 100%;
+        background: #1a3c34;
+        padding: 15px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+      }
+
+      .navbar .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding: 10px 20px;
+        border-radius: 8px;
+        transition: background 0.3s ease, transform 0.2s ease;
+      }
+
+      .navbar a:hover {
+        background: #2e6b5e;
+        transform: translateY(-2px);
+      }
+
+      .navbar a:active {
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="./assets/html/location-inspector.html"
+          >1.1. location-inspector</a
+        >
+        <a href="./assets/html/url-manipulator.html">1.2. URL Manipulator</a>
+        <a href="./assets/html/spa-navigation.html">2. SPA Navigation</a>
+        <a href="./assets/html/clipboard-manager.html"
+          >3.1. Clipboard Manager</a
+        >
+        <a href="./assets/html/camera-capture.html">3.2. Camera Capture</a>
+      </div>
+    </nav>
+  </body>
+</html>
